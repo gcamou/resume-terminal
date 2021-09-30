@@ -1,0 +1,147 @@
+body {
+  background-image: url("https://static.wixstatic.com/media/d96ba2_666d07cf08ba4ff4a0f7a85599de2b7b~mv2.gif");
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#terminal {
+  width: 90vw;
+  height: 85vh;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#terminal-bar {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  padding: 0 8px;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #313334;
+}
+
+#bar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.bar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-right: 5px;
+  font-size: 8px;
+  height: 12px;
+  width: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 100%;
+}
+.bar-button:hover {
+  cursor: pointer;
+}
+.bar-button:focus {
+  outline: none;
+}
+#bar-button-exit {
+  background: #ff605c;
+  background-clip: padding-box;
+}
+#bar-button-minimize {
+  background: #ffbd44;
+  background-clip: padding-box;
+}
+#bar-button-maximize {
+  background: #00ca4e;
+  background-clip: padding-box;
+}
+
+#bar-user {
+  color: #b1b3b5;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+#terminal-body {
+  background: #073642e6;
+  height: calc(100% - 30px);
+  padding-top: 2px;
+  margin-top: -1px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+#terminal-prompt {
+  display: flex;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, "Hiragino Sans GB",
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #737373;
+  letter-spacing: 0.0099em;
+  margin: 10px 13px 10px 13px;
+}
+#terminal-prompt-user {
+  color: #d33682;
+}
+#terminal-prompt-at {
+  color: #2aa198;
+}
+#terminal-prompt-host {
+  color: #859900;
+}
+#terminal-prompt-command {
+  color: #dc322f;
+}
+#terminal-prompt-help {
+  color: #829496;
+}
+#terminal__prompt--bling {
+  color: #dddddd;
+}
+#terminal-prompt-cursor {
+  display: block;
+  height: 17px;
+  width: 8px;
+  margin-left: 9px;
+  margin-top: 10px;
+  animation: blink 1200ms linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    background: #ffffff;
+  }
+  49% {
+    background: #ffffff;
+  }
+  60% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+
+@media (max-width: 600px) {
+  #terminal {
+    max-height: 90%;
+    width: 90%;
+  }
+}
