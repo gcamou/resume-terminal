@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <video onloadedmetadata="this.muted=true" autoplay loop>
+    <source src="assets/gcamou-background.mp4" />
+  </video>
   <head>
     <meta charset="utf-8" />
-    <title>resume</title>
+    <title>gcamou.io</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- Bootstrap -->
-    <!-- Bootstrap Solarized dark theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
     <main id="container">
@@ -17,7 +24,7 @@
             <button class="bar-button" id="bar-button-minimize"></button>
             <button class="bar-button" id="bar-button-maximize"></button>
           </div>
-          <p id="bar-user">Bcs. Gerardo Camou</p>
+          <span id="bar-user">Bcs. Gerardo Camou</span>
         </section>
         <section id="terminal-body">
           <div id="terminal-prompt">
@@ -30,179 +37,669 @@
             <span id="terminal-prompt-command">⇒</span>
             <span id="terminal-prompt-cursor"></span>
           </div>
-          <pre id="terminal-prompt-help">
-            usage: gcamou [--name] [--summary] [--languages] [--personalInfo] 
-                [--socialNetwork] [--experiences] [--skills] [--profiles] [--education]
-                [--courses]
-          
-          I´m a Software Solution Engineer with over 15 years of experience. I had worked with all kinds of projects through my professional career. I consider myself a 
-          passionate programmer that is always looking the best way to make a better solution.
-          
-          this is a personal information contact and social network
-              name          Bcs. Gerardo Camou
-              languages     Spanish (Native)
-                            English advance level
-              nationality   Mexican
-              birthDay      March 24, 1983
-              phone         +52 (811) 211 1655
-              email         pingme@gcamou.io
-              passport      yes
-              visa          yes
-              follow-me     https://www.linkedin.com/in/gerardocamou/
-              web-page      https://www.gcamou.io/
-          
-          years of experience with the next roles, functions and technologies
-              Team Leader         9 years of experiences
-              Sofware Architect   11 years of experiences
-              Web Service         15 years of experiences
-              DBA (SQL Server)    15 years of experiences
-              Software Engineer   12 years of experiences
-              Javascripts         10 years of experiences
-              NodeJs               5 years of experiences
-              React                4 years of experiences
-          
-          other skills, technologies and methodologies
-              skils     C#          VB.NET          JAVASCRIPTS     ASP.NET       LINQ          XML       XAML     
-                        Java        C++             C               Singleton     Factory       MVVM      MVC         
-                        OBSERVER    ADAPTER         REPORSITORY     UNITOFWORK    SQLSERVER     MYSQL     ORACLE      
-                        POSTGRESQL  PL/SQL          EF              DEVEXPRESS    WPF           WCF       WSSF        
-                        SSIS        INFRAGISTICS    TELERIK         SAP           OPC UA        REACT     NODEJS     
-                        MQTT        SCRUM           
-          
-          profiles, tasks and functions
-              Software Manager      Create Developer Teams, Overseeing & Coordinating Teams, Design Workflows, Design Portfolio Projects Budgets Resources Overseeing 
-                                    Workflows.
-              Software Architect    Identify function & nonfunction requirement, Design coding, tools & platforms standards, Interact by normative clients, Code & 
-                                    architect review, Write documentation.
-              Software Engineer     Managing software development lifecycle (SDLC), Provide best practices and standard, Creating innovative solutions, Define methodology 
-                                    in an agile environment, Communicating key project data to team.
-              Software Analyst      Identify problematical by the requirement clients, Design solution by evaluating workflow solutions, Ensures operation by training 
-                                    client personnel, Provide documentation of use cases and UML diagrams.
-              IIoT Specialist       Define communication protocol, Identify relevant assets monitoring, Create strategy to compression & historization data, Define cloud 
-                                    infrastructure, Define modeling data science, Design UX.
-          
-          work experiences 
-              company         Arte Digital
-              location        Tijuana, Baja California
-              position        Software Architect
-              activities      Refine product back items and assign to the team members, Development UI & API components for web applications, Working with team to improve 
-                              skills, Supervise clean code, best practice and clean architecture.
-              functions       Collaborate with team members to determine best practices and requirements for the software. Oversight and approval of all final programs and 
-                              products before the formal launch. Troubleshoot coding problems quickly and efficiently to ensure a productive workplace
-              
-              company         Hexaware
-              location        Monterrey, Nuevo León
-              position        Full Stack Software Engineer
-              activities      Development UI & API components for web applications, working side-byside with other engineers on architecture, integration, and maintenance of 
-                              the applications in order to keep up with micro-service platform.
-              functions       Handle the design, architecture, development, code review, and proof of concept prototypes. Work closely with the product management include 
-                              both internal stakeholders as well as external clients on multitime zone and design team to define feature requirements.
-              
-              company         FAMA
-              location        Monterrey, Nuevo León
-              position        Expert on Control Software
-              activities      Handle daily meeting with developer teams, Prepared reports each week to compare the advance acoording with the plan, Create project 
-                              documentation and present ROI with investors, coordinate meeting with directions and vendors, budget management.
-              functions       Development coordinator, Specialist IIoT, Software Architect, Searcher new technologies for implementing on glass industries, Prototype 
-                              Implementer, Team Leader
-              
-              company         OXXO
-              location        Monterrey, Nuevo León
-              position        Software Architect
-              activities      Development Solution for Data Information Integration between SQL Server to Database, Planning, care and mitigation of incidents in production, 
-                              Development Coordinator, Performance improvement for transition in SQL Server. Maintenance and improvement of internal projects.
-              functions       Collaborate with lead of other teams, Planning deployments, Formalize software launches in store. Troubleshoot balance.
-              
-              company         ABA SEGUROS
-              location        Monterrey, Nuevo León
-              position        Software Architect
-              activities      Development Hand-Held UI, web service and integration package, coordinate deployments monthly, Design mobile architecture and validate mobile 
-                              hardware compatibility.
-              functions       Development coordinator, Service Programming (WSSF), Software development and requirement analysis, Integration Package Service Programming, 
-                              performance for SQL Server 2008. Maintenance and enhancement for internal project.
-              
-              company         CARRIER
-              location        Monterrey, Nuevo León
-              position        Software Architect
-              activities      Design architecture, Development UI web applications, Create user-case documentation, Design entity-relationship model, create structure and 
-                              migration for database.
-              functions       Architecture planning and development of migration portal, Creating and designing portal web for purchase and delivery orders, Maintenance 
-                              and support for new modules, Design MER model.
-                              
-              company         MIMOSS
-              location        Monterrey, Nuevo León
-              position        Software Engineer
-              activities      Development UI web applications, Development UI mobile applications, Create Framework libraries,  Create store-procedure.
-              functions       Mobile Portal Planning, Design and Development (BlackBerry y Windows Mobile Standard 6.5), Time Control Portal Development. Portal development 
-                              and Documentum modules management.
-              
-              company         SORTEO TEC
-              location        Monterrey, Nuevo León
-              position        Software Engineer
-              activities      Development, Analyst and Design.
-              functions       Development mobile application, Create migration process between SQL lite and Oracle Db.
-        
-              company         PACIFIC SOFT"
-              location        Hermosillo, Sonora
-              position        Software Engineer
-              activities      Development, Analyst and Design.
-              functions       Mobile Development Solution, UI Designer by Hand-Held, Software Analyst and Maintenance and support for retails modules.
-          
-          where, when and how gerardo camou keeps his knowledge fresh and up-to-date
-              college         UNIVERSIDAD DE SONORA
-              city            Hermosillo
-              country         México
-              career          Bcs. Computer Science
-              specialist      Artificial Intelligence, Artificial Vision, Genetic Algorithms.
-
-              courses
-                name          React
-                academy       UDEMY
-                date          2020
-                city          Monterrey, México"
-                
-                name          Node Js
-                academy       UDEMY
-                date          2020
-                city          Monterrey, México
-                
-                name          Fundamental TOGAF Part1
-                academy       UDEMY
-                date          2020
-                city          Monterrey, México
-                
-                name          Fundamental TOGAF Part2
-                academy       UDEMY
-                date          2020
-                city          Monterrey, México
-                
-                name          20486C Developing ASP.net MVC 5 Web Applications
-                academy       NETEC
-                date          2019
-                city          CDMX, México
-                
-                name          Certificate OPC UA Technology
-                academy       VESTER
-                date          2018
-                city          CDMX, México
-                
-                name          Certificate Genesis64 + Hyper Historian
-                academy       ICONICS
-                date          2017
-                city          MASSACHUSETTS
-                country       United State of America
-                
-                name          Diploma in Project Management
-                academy       PMP N° 292396
-                date          2016
-                city          MONTERREY, México
-
-              books
-                Clean Code, Robert C. Martin
-                C# and .NET Core Test-Driven Development, Ayobami Adewole
-          
-          © 2021 gcamou, All rights reserved.
-          </pre>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>usage:</span></div>
+            <div class="prompt-description col-sm-8">
+              <span>
+                gcamou [--name] [--summary] [--languages] [--personalInfo]
+                [--socialNetwork] [--experiences] [--skills] [--profiles]
+                [--education] [--courses]
+              </span>
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-overflow col-sm-12">
+              <span>
+                I´m a Software Solution Engineer with over 15 years of
+                experience. I had worked with all kinds of projects through my
+                professional career. I consider myself a passionate programmer
+                that is always looking the best way to make a better solution.
+              </span>
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>name</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Bcs. Gerardo Camou</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>languages</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Spanish (Native), English advance level</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>nationality</span></div>
+            <div class="prompt-description col-sm-10"><span>Mexican</span></div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>email</span></div>
+            <div class="prompt-description col-sm-10">
+              <a href="mailto: pingme@gcamou.io">pingme@gcamou.io</a>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>follow-me</span></div>
+            <div class="prompt-description col-sm-10">
+              <a href="https://www.linkedin.com/in/gerardocamou/"
+                >https://www.linkedin.com/in/gerardocamou/</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-overflow col-sm-12">
+              <span
+                >years of experience with the next roles, functions and
+                technologies</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>Team Leader</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>9 years of experiences</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1">
+              <span>Sofware Architect</span>
+            </div>
+            <div class="prompt-description col-sm-10">
+              <span>15 years of experiences</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1">
+              <span>DBA (SQL Server)</span>
+            </div>
+            <div class="prompt-description col-sm-10">
+              <span>15 years of experiences</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1">
+              <span>Software Engineer</span>
+            </div>
+            <div class="prompt-description col-sm-10">
+              <span>12 years of experiences</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>Javascripts</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>10 years of experiences</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>NodeJs</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>5 years of experiences</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>React</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>4 years of experiences</span>
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-overflow col-sm-12">
+              <span>other skills, technologies and methodologies</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>Skills</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >C# | VB.NET | JAVASCRIPTS | ASP.NET | LINQ | XML | XAML | Java
+                | C++ | C | Singleton | Factory | MVVM | MVC | OBSERVER |
+                ADAPTER | REPORSITORY | UNITOFWORK | SQLSERVER | MYSQL | ORACLE
+                | POSTGRESQL | PL/SQL | EF | DEVEXPRESS | WPF | WCF | WSSF |
+                SSIS | INFRAGISTICS | TELERIK | SAP | OPC | UA | REACT | NODEJS
+                | MQTT | SCRUM</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-overflow col-sm-12">
+              <span>profiles, tasks and functions</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1">
+              <span>Software Manager</span>
+            </div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Create teams of developers, supervise and coordinate teams,
+                design workflows, design portfolio projects, budgets, resources,
+                monitor workflows.</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1">
+              <span>Software Architect</span>
+            </div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Identification of function and non-function requirements,
+                design coding, platform and tool standards, interaction with
+                regulatory clients, architect and code review, documentation
+                writing.</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1">
+              <span>Software Engineer</span>
+            </div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Manage the software development life cycle (SDLC), provide best
+                practices and standards, create innovative solutions, define
+                methodology in an agile environment, communicate key project
+                data to the team.</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1">
+              <span>Software Analyst</span>
+            </div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Identify problem customers by requirements, design solution by
+                evaluating workflow solutions, ensure operation by training
+                customer staff, provide use case documentation and UML
+                diagrams.</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1">
+              <span>IIoT Specialist</span>
+            </div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Define communication protocol, identify relevant asset
+                monitoring, create strategy for data compression and
+                historization, define cloud infrastructure, define modeling data
+                science, design UX.</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-overflow col-sm-12">
+              <span
+                >work experiences, job positions activities and functions</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>company</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Arte Digital</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>location</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Tijuana, Baja California</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>position</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Software Architect</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>activities</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Refine product back items and assign to the team members,
+                Development UI & API components for web applications, Working
+                with team to improve skills, Supervise clean code, best practice
+                and clean architecture.</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>functions</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Collaborate with team members to determine best practices and
+                requirements for the software. Oversight and approval of all
+                final programs and products before the formal launch.
+                Troubleshoot coding problems quickly and efficiently to ensure a
+                productive workplace.</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>company</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Hexaware</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>location</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Monterrey, Nuevo León</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>position</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Full Stack Software Engineer</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>activities</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Development UI & API components for web applications, working
+                side-byside with other engineers on architecture, integration,
+                and maintenance of the applications in order to keep up with
+                micro-service platform.</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>functions</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Handle the design, architecture, development, code review, and
+                proof of concept prototypes. Work closely with the product
+                management include both internal stakeholders as well as
+                external clients on multitime zone and design team to define
+                feature requirements.</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>company</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>FAMA</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>location</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Monterrey, Nuevo León</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>position</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Expert on Control Software</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>activities</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Handle daily meeting with developer teams, Prepared reports
+                each week to compare the advance acoording with the plan, Create
+                project documentation and present ROI with investors, coordinate
+                meeting with directions and vendors, budget management.</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>functions</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Development coordinator, Specialist IIoT, Software Architect,
+                Searcher new technologies for implementing on glass industries,
+                Prototype Implementer, Team Leader</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>company</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>OXXO</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>location</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Monterrey, Nuevo León</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>position</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Software Architect</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>activities</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Development Solution for Data Information Integration between
+                SQL Server to Database, Planning, care and mitigation of
+                incidents in production, Development Coordinator, Performance
+                improvement for transition in SQL Server. Maintenance and
+                improvement of internal projects.</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>functions</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Collaborate with lead of other teams, Planning deployments,
+                Formalize software launches in store. Troubleshoot
+                balance.</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>company</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>ABA SEGUROS</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>location</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Monterrey, Nuevo León</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>position</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Software Architect</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>activities</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Development Hand-Held UI, web service and integration package,
+                coordinate deployments monthly, Design mobile architecture and
+                validate mobile hardware compatibility.</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>functions</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Development coordinator, Service Programming (WSSF), Software
+                development and requirement analysis, Integration Package
+                Service Programming, performance for SQL Server 2008.
+                Maintenance and enhancement for internal project.</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>company</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>CARRIER</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>location</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Monterrey, Nuevo León</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>position</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Software Architect</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>activities</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Design architecture, Development UI web applications, Create
+                user-case documentation, Design entity-relationship model,
+                create structure and migration for database.</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>functions</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Architecture planning and development of migration portal,
+                Creating and designing portal web for purchase and delivery
+                orders, Maintenance and support for new modules, Design MER
+                model.</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>company</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>MIMOSS</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>location</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Monterrey, Nuevo León</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>position</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Software Engineer</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>activities</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Development UI web applications, Development UI mobile
+                applications, Create Framework libraries, Create
+                store-procedure.</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>functions</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Mobile Portal Planning, Design and Development (BlackBerry y
+                Windows Mobile Standard 6.5), Time Control Portal Development.
+                Portal development and Documentum modules management.</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>company</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>SORTEO TEC</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>location</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Monterrey, Nuevo León</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>position</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Software Engineer</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>activities</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Development, Analyst and Design.</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>functions</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Development mobile application, Create migration process
+                between SQL lite and Oracle Db.</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>company</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>PACIFIC SOFT</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>location</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Hermosillo, Sonora</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>position</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Software Engineer</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>activities</span></div>
+            <div class="prompt-description col-sm-10">
+              <span> Development, Analyst and Design.</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>functions</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Mobile Development Solution, UI Designer by Hand-Held, Software
+                Analyst and Maintenance and support for retails modules.</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-overflow col-sm-12">
+              <span
+                >where, when and how gerardo camou keeps his knowledge fresh and
+                up-to-date</span
+              >
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>college</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>UNIVERSIDAD DE SONORA</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>career</span></div>
+            <div class="prompt-description col-sm-10">
+              <span>Bcs. Computer Science</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>specialist</span></div>
+            <div class="prompt-description col-sm-10">
+              <span
+                >Artificial Intelligence, Artificial Vision, Genetic
+                Algorithms.</span
+              >
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>courses</span></div>
+            <div class="prompt-description col-sm-10">
+              <div>
+                <span>React, UDEMY 2020, Monterrey, México</span>
+              </div>
+              <div>
+                <span>Node Js, UDEMY 2020, Monterrey, México</span>
+              </div>
+              <div>
+                <span
+                  >Fundamental TOGAF Part1, UDEMY 2020, Monterrey, México</span
+                >
+              </div>
+              <div>
+                <span
+                  >Fundamental TOGAF Part2, UDEMY 2020, Monterrey, México</span
+                >
+              </div>
+              <div>
+                <span
+                  >20486C Developing ASP.net MVC 5 Web Applications, NETEC 2019,
+                  CDMX, México</span
+                >
+              </div>
+              <div>
+                <span
+                  >Certificate OPC UA Technology, VESTER 2018, CDMX,
+                  México</span
+                >
+              </div>
+              <div>
+                <span
+                  >Certificate Genesis64 + Hyper Historian, ICONICS 2017,
+                  MASSACHUSETTS, United State of America</span
+                >
+              </div>
+              <div>
+                <span
+                  >Diploma in Project Management, PMP N° 292396 2017, MONTERREY,
+                  México</span
+                >
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="prompt">
+            <div class="prompt-overflow col-sm-12">
+              <span>Another source of knowledge</span>
+            </div>
+          </div>
+          <div class="prompt">
+            <div class="prompt-titles col-sm-1"><span>books</span></div>
+            <div class="prompt-description col-sm-10">
+              <div>
+                <a href="https://amzn.to/2YoQM8y">Clean Code</a>
+                <a href=" https://en.wikipedia.org/wiki/Robert_C._Martin"
+                  >, Robert C. Martin</a
+                >
+              </div>
+              <div>
+                <a href="https://amzn.to/3AdSruR"
+                  >C# and .NET Core Test-Driven Development</a
+                >
+                <span>
+                  <a href="https://www.linkedin.com/in/ayobamiadewole/?originalSubdomain=ca"
+                    >, Ayobami Adewole</a>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="prompt-footer">
+            <span>© 2021 gcamou, All rights reserved.</span>
+          </div>
         </section>
       </div>
     </main>

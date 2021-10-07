@@ -1,12 +1,19 @@
 body {
-  background-image: url("assets/gcamou-background.gif");
-  background-size: cover;
-  height: 100vh;
   padding: 0;
   margin: 0;
 }
 
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 #container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +21,8 @@ body {
 }
 
 #terminal {
-  width: 90vw;
-  height: 85vh;
+  width: 60vw;
+  height: 75vh;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -81,7 +88,6 @@ body {
   padding-top: 2px;
   margin-top: -1px;
   overflow-y: auto;
-  overflow-x: auto;
 }
 
 #terminal-prompt {
@@ -112,6 +118,7 @@ body {
 #terminal__prompt--bling {
   color: #dddddd;
 }
+
 #terminal-prompt-cursor {
   display: block;
   height: 17px;
@@ -121,6 +128,66 @@ body {
   animation: blink 1200ms linear infinite;
 }
 
+.prompt {
+  display: flex;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, "Hiragino Sans GB",
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #829496;
+  letter-spacing: 0.0099em;
+  margin-left: 30px;
+  line-height: 20px;
+}
+
+.prompt-titles {
+  display: flex;
+  color: #829496;
+  float: left;
+  width: 155px !important;
+}
+
+.prompt-titles:before {
+  content: "[";
+  color: #859900;
+}
+
+.prompt-description {
+  color: #829496;
+  float: left;
+}
+
+.prompt-description:after {
+  content: "]";
+  color: #859900;
+}
+
+.prompt-overflow {
+  color: #d33682;
+  float: left;
+  text-transform: capitalize;
+}
+
+.prompt-overflow:before {
+  content: "[";
+  color: #859900;
+}
+
+.prompt-overflow:after {
+  content: "]";
+  color: #859900;
+}
+
+.prompt-footer {
+  margin: 30px 0px 30px 0px;
+  text-align: center;
+  color: #829496;
+}
+
+div a {
+  color: #2aa198;
+  text-decoration: none;
+}
 @keyframes blink {
   0% {
     background: #ffffff;
