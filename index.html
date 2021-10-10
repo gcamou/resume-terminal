@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <video onloadedmetadata="this.muted=true" autoplay loop>
+  <video
+    onloadedmetadata="this.muted=true"
+    autoplay
+    loop
+    poster="assets/gcamou-background.jpeg"
+  >
     <source src="assets/gcamou-background.mp4" />
   </video>
   <head>
@@ -52,7 +57,7 @@
             <div class="prompt-overflow col-sm-12">
               <span>
                 I´m a Software Solution Engineer with over 15 years of
-                experience. I had worked with all kinds of projects through my
+                experience. I have worked with all kinds of projects through my
                 professional career. I consider myself a passionate programmer
                 that is always looking the best way to make a better solution.
               </span>
@@ -689,9 +694,10 @@
                 <a href="https://amzn.to/3AdSruR"
                   >C# and .NET Core Test-Driven Development</a
                 >
-                <span>
-                  <a href="https://www.linkedin.com/in/ayobamiadewole/?originalSubdomain=ca"
-                    >, Ayobami Adewole</a>
+                <a
+                  href="https://www.linkedin.com/in/ayobamiadewole/?originalSubdomain=ca"
+                  >, Ayobami Adewole</a
+                >
               </div>
             </div>
           </div>
@@ -704,4 +710,19 @@
       </div>
     </main>
   </body>
+  <script>
+    function showimage() {
+      var storageRef = firebase.storage().ref();
+      var spaceRef = storageRef.child("sweet_gift/vytcdc.png");
+      storageRef
+        .child("sweet_gift/vytcdc.png")
+        .getDownloadURL()
+        .then(function (url) {
+          var test = url;
+          alert(url);
+          document.querySelector("img").src = test;
+        })
+        .catch(function (error) {});
+    }
+  </script>
 </html>
